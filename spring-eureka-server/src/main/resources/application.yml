@@ -1,9 +1,12 @@
 server:
   port: ${PORT:8761}
-
 eureka:
+  instance:
+    hostname: http://openjdk-app-microservices.apps.cdeocp.com 
   client:
     registerWithEureka: false
     fetchRegistry: false
+     service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
   server:
     waitTimeInMsWhenSyncEmpty: 0

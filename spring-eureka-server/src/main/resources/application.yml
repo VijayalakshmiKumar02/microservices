@@ -2,7 +2,7 @@ server:
   port: ${PORT:8761}
 eureka:
   instance:
-    hostname: http://openjdk-app-microservices.apps.cdeocp.com 
+    hostname: http://eureka-microservices.apps.cdeocp.com 
   client:
     registerWithEureka: false
     fetchRegistry: false

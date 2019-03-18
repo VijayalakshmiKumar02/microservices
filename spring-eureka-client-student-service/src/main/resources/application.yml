@@ -8,10 +8,10 @@ eureka:
     preferIpAddress: false
   client:
     serviceUrl:
-      defaultZone: http://eureka.microservices.svc:8761/eureka
+      defaultZone: eureka/eureka
       
       instance:
-      hostname: http://student-service-microservices.apps.cdeocp.com
+      hostname: student-service/eureka
     healthcheck:
       enabled: true
     lease:

@@ -8,7 +8,9 @@ eureka:
     
   client:
     serviceUrl:
-      defaultZone: student-service.microservices.svc
+      defaultZone: http://eureka-microservices.apps.cdeocp.com/eureka
+      instance:
+      hostname: student-service.microservice.svc
     healthcheck:
       enabled: true
     lease:

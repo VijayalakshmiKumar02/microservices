@@ -7,7 +7,7 @@ eureka:
     leaseExpirationDurationInSeconds: 2
   client:
     serviceUrl:
-      defaultZone: http://eureka.microservices.svc:8761/eureka/
+      defaultZone: http://eureka-microservices.apps.cdeocp.com/eureka/
     healthcheck:
       enabled: true
     lease:

@@ -2,9 +2,11 @@ server:
   port: ${PORT:8761}
 eureka:
   instance:
-    hostname: eureka-microservices.apps.cdeocp.com  
+    hostname: eureka.microservices.svc
   client:
     registerWithEureka: false
     fetchRegistry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
   server:
     waitTimeInMsWhenSyncEmpty: 0

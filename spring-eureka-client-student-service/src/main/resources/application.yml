@@ -11,7 +11,7 @@ eureka:
       defaultZone: http://eureka.microservices.svc:8761/eureka
       
       instance:
-      hostname: student-service
+      hostname: http://student-service-microservices.apps.cdeocp.com
     healthcheck:
       enabled: true
     lease:

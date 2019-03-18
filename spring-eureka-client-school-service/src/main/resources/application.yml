@@ -7,7 +7,9 @@ eureka:
     leaseExpirationDurationInSeconds: 2
   client:
     serviceUrl:
-      defaultZone: school-service.microservices.svc
+      defaultZone: http://eureka-microservices.apps.cdeocp.com/eureka
+      instance:
+      hostname: school-service.microservice.svc
     healthcheck:
       enabled: true
     lease:

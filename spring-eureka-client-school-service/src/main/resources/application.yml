@@ -12,6 +12,7 @@ eureka:
       enabled: true
     lease:
       duration: 5
+    registerWithEureka: true
 
 spring:
   application:

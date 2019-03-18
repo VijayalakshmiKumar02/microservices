@@ -9,6 +9,7 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://eureka.microservices.svc:8761/eureka
+      eureka.instance.preferIpAddress=false
       instance:
       hostname: student-service.microservice.svc
     healthcheck:

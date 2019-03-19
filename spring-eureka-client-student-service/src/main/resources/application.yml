@@ -10,7 +10,7 @@ eureka:
     name: student-service
     vipAddress: http://student-service-microservices.apps.cdeocp.com
     serviceUrl:
-      defaultZone: http:eureka.microservices.svc/eureka
+      defaultZone: http:eureka.microservices.svc:8761/eureka
       
       
     healthcheck:

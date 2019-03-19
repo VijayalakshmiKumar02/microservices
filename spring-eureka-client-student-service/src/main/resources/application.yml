@@ -7,8 +7,8 @@ eureka:
     leaseExpirationDurationInSeconds: 2
     #preferIpAddress: false
   client:
-    name: student-service
-    vipAddress: http://student-service-microservices.apps.cdeocp.com
+    #name: student-service
+    #vipAddress: http://student-service-microservices.apps.cdeocp.com
     serviceUrl:
       defaultZone: http:eureka.microservices.svc:8761/eureka
       

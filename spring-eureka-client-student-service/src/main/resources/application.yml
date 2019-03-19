@@ -3,7 +3,7 @@ server:
 
 eureka:
   instance:
-    hostname: http://student-service-microservices.apps.cdeocp.com/
+    hostname: student-service-microservices.apps.cdeocp.com
     leaseRenewalIntervalInSeconds: 1
     leaseExpirationDurationInSeconds: 2
     #preferIpAddress: false

@@ -1,13 +1,15 @@
-#server:
-  #port: 8098
+server:
+  port: 8098
 
 eureka:
   instance:
-    hostname: student-service-microservices.apps.cdeocp.com
+    #hostname: student-service-microservices.apps.cdeocp.com
     leaseRenewalIntervalInSeconds: 1
     leaseExpirationDurationInSeconds: 2
     #preferIpAddress: false
   client:
+    availabilityZones: 
+      default: http://student-service-microservices.apps.cdeocp.com
     serviceUrl:
       defaultZone: http://eureka-microservices.apps.cdeocp.com/eureka
       

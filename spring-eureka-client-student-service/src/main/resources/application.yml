@@ -5,13 +5,14 @@ eureka:
   instance:
     leaseRenewalIntervalInSeconds: 1
     leaseExpirationDurationInSeconds: 2
-    preferIpAddress: false
+    #preferIpAddress: false
   client:
+    name: student-service
+    vipAddress: http://student-service-microservices.apps.cdeocp.com
     serviceUrl:
       defaultZone: http:eureka.microservices.svc/eureka
       
-      instance:
-      hostname: student-service/eureka
+      
     healthcheck:
       enabled: true
     lease:

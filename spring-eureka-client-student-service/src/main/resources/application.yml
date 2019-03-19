@@ -3,15 +3,15 @@ server:
 
 eureka:
   instance:
-    hostname: student-service-microservices.apps.cdeocp.com
+    hostname: student-service.microservices.svc:8098
     leaseRenewalIntervalInSeconds: 1
     leaseExpirationDurationInSeconds: 2
-    #preferIpAddress: false
+    preferIpAddress: false
   client:
-    availabilityZones: 
-      default: http://student-service-microservices.apps.cdeocp.com
+    #availabilityZones: 
+      #default: http://student-service-microservices.apps.cdeocp.com
     serviceUrl:
-      defaultZone: http://eureka-microservices.apps.cdeocp.com/eureka
+      defaultZone: http://eureka.microservices.svc:8761/eureka
       
       
     healthcheck:

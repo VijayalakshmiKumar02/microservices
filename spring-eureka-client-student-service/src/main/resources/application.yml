@@ -1,9 +1,9 @@
-server:
-  port: 8098
+#server:
+ # port: 8098
 
 eureka:
   instance:
-    hostname: student-service.microservices.svc
+    hostname: http://student-service-microservices.apps.cdeocp.com
     leaseRenewalIntervalInSeconds: 1
     leaseExpirationDurationInSeconds: 2
     #preferIpAddress: false

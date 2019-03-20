@@ -10,9 +10,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
+
+import com.example.howtodoinjava.springeurekaclientschoolservice.delegate.StudentServiceDelegate;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import java.util.Date;
-import com.example.howtodoinjava.spring.delegate.StudentServiceDelegate;
 @RestController
 public class SchoolServiceController {
 	//@Autowired

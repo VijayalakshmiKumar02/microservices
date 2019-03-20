@@ -19,7 +19,7 @@ public class StudentServiceDelegate {
 	public String callStudentServiceAndGetData(String schoolname) {
 		System.out.println("Getting School details for " + schoolname);
 		String response = restTemplate
-				.exchange("http://student-service/getStudentDetailsForSchool/{schoolname}"
+				.exchange("http://student-service-microservices.apps.cdeocp.com/getStudentDetailsForSchool/{schoolname}"
 				, HttpMethod.GET
 				, null
 				, new ParameterizedTypeReference<String>() {
